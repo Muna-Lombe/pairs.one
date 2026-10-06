@@ -27,22 +27,23 @@ exports.config = {
     }
   },
 
+  
+  // Phoenix paths configuration
+  paths: {
+    // Dependencies and current project directories to watch
+    watched: ["elm", "static", "css", "js", "vendor"],
+    
+    // Where to compile files to
+    public: "../priv/static"
+  },
+  
+  
   conventions: {
     // This option sets where we should place non-css and non-js assets in.
     // By default, we set this to "/assets/static". Files in this directory
     // will be copied to `paths.public`, which is "priv/static" by default.
     assets: /^(static)/
   },
-
-  // Phoenix paths configuration
-  paths: {
-    // Dependencies and current project directories to watch
-    watched: ["elm", "static", "css", "js", "vendor"],
-
-    // Where to compile files to
-    public: "../priv/static"
-  },
-
   // Configure your plugins
   plugins: {
     // See .deliver/config, where we do elmBrunch's work manually

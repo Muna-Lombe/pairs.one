@@ -38,3 +38,5 @@ config :logger, :console, format: "[$level] $message\n"
 # Set a higher stacktrace during development. Avoid configuring such
 # in production as building large stacktraces may be expensive.
 config :phoenix, :stacktrace_depth, 20
+
+  config :pairs_one, :redis_uri, System.get_env("REDIS_URI") || "redis://127.0.0.1:6379"

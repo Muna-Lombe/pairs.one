@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<%= gettext "Play memory/concentration game with friends over the Internet without registration" %>">
     <meta name="author" content="Max Gorin">
-    <meta content='/images/landing.jpg' property='og:image'>
+    <meta content='images/landing.jpg' property='og:image'>
     <title><%= gettext "Concentration game: multiplayer and registration-free" %></title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">

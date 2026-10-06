@@ -54,7 +54,7 @@ $(function(){
     function(i, el){
       var themes = $(el).data('themes');
 
-      elm = Elm.Game.embed(el, {
+      elm = elm.Game.embed(el, {
         id: "" + $(el).data('id'), // because sometimes it comes as an number
         playerId: playerId,
         playerName: playerName || "",

@@ -61,7 +61,6 @@ if config_env() == :prod do
       ]
     ]
 
-  config :pairs_one, :redis_uri, System.get_env("REDIS_URI")
 
   # ## Configuring the mailer
   #
